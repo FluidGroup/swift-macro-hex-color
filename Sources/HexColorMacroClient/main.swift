@@ -1,11 +1,11 @@
 import HexColorMacro
 import SwiftUI
 
-#hexColor("#BA43F1")
+_ = #hexColor("#BA43F1")
 
-#hexColor("#BA43F1", colorSpace: .displayP3)
+_ = #hexColor("#BA43F1", colorSpace: .displayP3)
 
-#hexColor("#BA43F1", opacity: 1, colorSpace: .displayP3)
+_ = #hexColor("#BA43F1", opacity: 1, colorSpace: .displayP3)
 
 #if canImport(UIKit)
 
