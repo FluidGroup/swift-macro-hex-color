@@ -98,7 +98,10 @@ public struct HexToColorMacro: ExpressionMacro {
       return ""
     }
 
-    return "Color(\(arg_colorSpace ?? ".sRGB"), red: \(raw: rgb.r.description), green: \(raw: rgb.g.description), blue: \(raw: rgb.b.description), opacity: \(arg_opacity ?? "1"))"
+    return """
+    // \(raw: hexString)
+    Color(\(arg_colorSpace ?? ".sRGB"), red: \(raw: rgb.r.description), green: \(raw: rgb.g.description), blue: \(raw: rgb.b.description), opacity: \(arg_opacity ?? "1"))
+    """
   }
 }
 
@@ -122,7 +125,10 @@ public struct HexToUIColorSRGBMacro: ExpressionMacro {
       return ""
     }
 
-    return "UIColor(red: \(raw: rgb.r.description), green: \(raw: rgb.g.description), blue: \(raw: rgb.b.description), alpha: \(arg_opacity ?? "1"))"
+    return """
+    // \(raw: hexString)
+    UIColor(red: \(raw: rgb.r.description), green: \(raw: rgb.g.description), blue: \(raw: rgb.b.description), alpha: \(arg_opacity ?? "1"))
+    """
   }
 }
 
@@ -146,7 +152,10 @@ public struct HexToUIColorP3Macro: ExpressionMacro {
       return ""
     }
 
-    return "UIColor(displayP3Red: \(raw: rgb.r.description), green: \(raw: rgb.g.description), blue: \(raw: rgb.b.description), alpha: \(arg_opacity ?? "1"))"
+    return """
+    // \(raw: hexString)
+    UIColor(displayP3Red: \(raw: rgb.r.description), green: \(raw: rgb.g.description), blue: \(raw: rgb.b.description), alpha: \(arg_opacity ?? "1"))
+    """
   }
 }
 
