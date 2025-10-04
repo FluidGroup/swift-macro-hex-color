@@ -20,7 +20,7 @@ let package = Package(
   ],
   dependencies: [
     // Depend on the Swift 6.0 release of SwiftSyntax
-    .package(url: "https://github.com/apple/swift-syntax.git", "600.0.0"..<"603.0.0")
+    .package(url: "https://github.com/swiftlang/swift-syntax.git", "600.0.0"..<"603.0.0")
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.
