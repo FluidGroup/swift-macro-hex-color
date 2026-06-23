@@ -4,7 +4,7 @@ A macro that expands a hexadecimal string into a floating-point color value.
 
 ## Requirements
 
-Swift 5.9
+Swift 6.3
 
 ## SwiftUI
 
