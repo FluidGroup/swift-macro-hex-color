@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 6.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import CompilerPluginSupport
@@ -6,7 +6,7 @@ import PackageDescription
 
 let package = Package(
   name: "HexColorMacro",
-  platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .macCatalyst(.v13)],
+  platforms: [.macOS(.v12), .iOS(.v17), .tvOS(.v12), .watchOS(.v9), .macCatalyst(.v13)],
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
