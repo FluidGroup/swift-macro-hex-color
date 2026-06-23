@@ -6,7 +6,7 @@ import PackageDescription
 
 let package = Package(
   name: "HexColorMacro",
-  platforms: [.macOS(.v26), .iOS(.v17), .tvOS(.v26), .watchOS(.v26), .macCatalyst(.v26)],
+  platforms: [.macOS(.v12), .iOS(.v17), .tvOS(.v12), .watchOS(.v9), .macCatalyst(.v13)],
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
