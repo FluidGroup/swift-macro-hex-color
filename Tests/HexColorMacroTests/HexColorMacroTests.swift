@@ -22,6 +22,7 @@ final class HexColorMacroTests: XCTestCase {
       #hexColor("#FFFFFF", opacity: 1)
       """,
       expandedSource: """
+        // #FFFFFF
         Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0, opacity: 1)
         """,
       macros: testMacros
@@ -39,6 +40,7 @@ final class HexColorMacroTests: XCTestCase {
       #hexUIColorSRGB("#FFFFFF", opacity: 1)
       """,
       expandedSource: """
+        // #FFFFFF
         UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
         """,
       macros: testMacros
@@ -56,6 +58,7 @@ final class HexColorMacroTests: XCTestCase {
       #hexUIColorP3("#FFFFFF", opacity: 1)
       """,
       expandedSource: """
+        // #FFFFFF
         UIColor(displayP3Red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
         """,
       macros: testMacros
